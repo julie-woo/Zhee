@@ -29,7 +29,19 @@
         
         #orderbutton {
             padding-left: 300px;
+            margin: auto;
             font-family: 'Nanum Pen Script', cursive;
+        }
+        
+        .btn-group>Button {
+            background-color: white;
+            text-align: left;
+            color: gray
+        }
+        
+        .dropdown-menu>li>a {
+            display: block;
+            text-align: left;
         }
     </style>
 
@@ -62,13 +74,13 @@
                 <div class="input-group">
                     <span class="input-group-addon" style="width: 100px" id="basic-addon1">수량</span>
                     <div class="btn-group">
-                        <!-- 여기에서 "수량을 선택하세요"를 왼쪽 정렬로 바꾸는 방법을 모르겠어요ㅠㅠ -->
+
                         <button type="button" style="width: 575px" class="btn btn-default">--수량을 선택하세요--</button>
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                           <span class="caret"></span>
                           <span class="sr-only">Toggle Dropdown</span>
                         </button>
-                        <!-- 저는 왜 드롭다운이 안되는 걸까요... -->
+                        <!-- 드롭다운을 css에서 어떻게 도대체 구현해내야 하는지 잘 모르겠어요ㅠㅠ-->
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">1개</a></li>
                             <li><a href="#">2개</a></li>
@@ -93,11 +105,11 @@
                 </div>
 
                 <br>
-
+                <!-- orderbutton이 페이지의 중앙에 오게 하는 방법은 무엇일까요..ㅠㅠ-->
                 <div id="orderbutton">
                     <button type="button" class="btn btn-primary">주문 하기</button>
-
                 </div>
+
                 <br>
                 <br>
                 <br>
